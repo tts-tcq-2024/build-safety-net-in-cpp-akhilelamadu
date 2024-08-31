@@ -26,18 +26,15 @@ std::string generateSoundex(const std::string& name) {
 
     for (size_t i = 1; i < name.length() && soundex.length() < 4; ++i) {
         char code = getSoundexCode(name[i]);
-        if (code != '0' && code != prevCode) {
-            soundex += code;
-            prevCode = code;
-        }
+        bool isSignificant = (code != '0' && code != prevCode);
+        soundex += isSignificant ? code : '\0';
+        prevCode = isSignificant ? code : prevCode;
     }
 
-    while (soundex.length() < 4) {
-        soundex += '0';
-    }
-
+    soundex.resize(4, '0');
     return soundex;
 }
+
 
 int main()
 {
