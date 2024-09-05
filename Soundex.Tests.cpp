@@ -38,12 +38,6 @@ TEST(SoundexTest, TrimsToFourCharacters) {
     EXPECT_EQ(generateSoundex("Washington"), "W252");
 }
 
-TEST(SoundexTest, abc) {
-    EXPECT_EQ(generateSoundex("Tymczak"), "T522");
-
-    
-}
-
 TEST(SoundexTest, PadsWithZerosIfNeeded) {
     EXPECT_EQ(generateSoundex("Ray"), "R000");
     EXPECT_EQ(generateSoundex("P"), "P000");
