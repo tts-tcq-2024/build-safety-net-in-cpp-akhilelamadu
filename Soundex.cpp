@@ -43,8 +43,3 @@ std::string generateSoundex(const std::string& name) {
     return soundex;
 }
 
-// Main function to test the Soundex code generation
-int main() {
-    std::cout << generateSoundex("AKHIL");
-    return 0;
-}
