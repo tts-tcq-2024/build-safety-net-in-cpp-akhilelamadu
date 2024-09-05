@@ -36,6 +36,7 @@ TEST(SoundexTest, HandlesNameWithVowels) {
 
 TEST(SoundexTest, TrimsToFourCharacters) {
     EXPECT_EQ(generateSoundex("Washington"), "W252");
+}
 
 TEST(SoundexTest, abc) {
     EXPECT_EQ(generateSoundex("Tymczak"), "T522");
