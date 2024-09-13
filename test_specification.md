@@ -1,5 +1,8 @@
 # Test Specification for `Soundex` Function
 
+## Test File: `SoundexTest.cpp`
+## Test Class: `SoundexTest`
+
 ## Objective
 The goal is to verify the correctness of the `generateSoundex` function across different input scenarios, including edge cases such as empty strings, single-character inputs, multiple-character names, and handling of special characters and case sensitivity.
 
@@ -117,6 +120,3 @@ The goal is to verify the correctness of the `generateSoundex` function across d
         EXPECT_EQ(generateSoundex("P"), "P000");
     }
     ```
-
-## Conclusion
-The above test cases ensure the correct functioning of the `generateSoundex` function across a variety of inputs, including edge cases like empty inputs, names with special characters, and proper handling of code padding and trimming.
