@@ -1,4 +1,4 @@
-# Test Specification for `Soundex` Class
+# Test Specification for `Soundex` Function
 
 ## Objective
 The goal is to verify the correctness of the `generateSoundex` function across different input scenarios, including edge cases such as empty strings, single-character inputs, multiple-character names, and handling of special characters and case sensitivity.
